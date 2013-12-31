@@ -1,0 +1,125 @@
+<html>
+
+<head>
+<title>Connect 4!</title>
+<script src="jquery-1.10.2.min.js"></script>
+<script src="logic.js"></script>
+
+<style>
+	canvas {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.centroTit {
+		font-weight: bold;
+		font-size: 30px;
+		text-align: center;
+	}
+	.centro {
+		font-size: 24px;
+		text-align: center;
+	}
+
+	.centroMenor {
+		font-size: 16px;
+		text-align: center;
+	}
+	
+	.statusStyle {
+		font-weight: bold;
+		font-size: 15px;
+		text-align: center;	
+		color: orange;	
+	}
+	.centroRadio {
+		font-size: 20px;
+		position: relative;
+		top: 1%;
+	}
+
+	img.center {
+		 display: block;
+	 	 margin-left: auto;
+	 	 margin-right: auto;
+	}
+	.rodape {
+		font-size: 12px;
+		text-align: center;
+		font-style:italic;
+	}
+
+</style>
+</head>
+
+<body>
+
+<div class="centroTit">Connect 4! <br/> Status:</div>
+<div class="statusStyle" id="status">Conecte-se ao servidor para jogar!</div>
+
+<br>
+
+</div>
+
+<canvas id="canvas2d" width="800" height="500">
+</canvas>
+
+<div class="centroRadio">
+	<table width="50%" align=center cellpadding="5" style="border: 2px solid black">
+		<tr>
+			<td>
+			<input name="cores" id="colorblue" type=radio value="blue" />Azul
+			<br/>
+			<input name="cores" id="colorred" type=radio value="red" checked />Vermelho
+			<br/><br/>
+			<input id="confirmcolor" type="button" value="Confirmar Cor" />
+			</td>
+
+			<td>
+			Host: <input id="host" type=input size=25 />
+			<input id="connectbutton" type="button" value="CONNECT!" />
+			<input id="disconnectbutton" type="button" value="QUIT!" />
+			</td>
+
+			<td>
+			<input id="cleanbutton" style="width: 100px; height:60px;" type="button" value="Mais um!" />
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+<br/><br/>
+
+<div class="centroTit">
+Ajuda
+</div>
+
+<div class="centro">
+<b>Connect4</b> &#233; um jogo muito simples<br/>Basta clicar na primeira linha do tabuleiro acima para soltar sua pe&#231;a.<br/><br/>O objetivo &#233; fazer 4 pe&#231;as ligadas.<br/>
+Pode ser na vertical, horizontal ou diagonal. Todas as dire&#231;&#245;es.<br/>Basta se conectar ao servidor e jogar!!<br/><br/>
+</div>
+
+<div class="centroTit">
+Boa sorte :)
+</div>
+
+<br/><br/>
+
+<div class="centroMenor">
+Caso queira abrir seu pr&#243;prio servidor, fa&#231;a o download do mesmo <a href="http://www.google.com">AQUI</a>
+</div>
+
+<br><br/>
+
+<a href="http://en.wikipedia.org/wiki/Connect_Four" target="_blank"><img src="connect.jpg" class="center"/></a>
+
+<br/><br/>
+
+<div class="rodape">
+Desenvolvido por Ricardo Godoy (<a href="mailto:ricardofagodoy@gmail.com?Subject=Obrigado" target="_top">ricardofagodoy@gmail.com</a>) - Livre para c&#243;pia.
+</div>
+
+</body>
+</html>
